@@ -1,0 +1,80 @@
+!!!
+%html
+  %head
+    %title Yohei Senju
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+  %body
+    #wrapper
+      %header#header.alt
+        %span.logo
+          = image_tag 'senju.png', height: 200
+        %h1 Yohei Senju
+        %p
+          %br/
+          github:
+          = link_to "https://github.com/100010/", "https://github.com/100010/"
+          %br/
+          twitter:
+          = link_to "https://twitter.com/seyoorange0711s", "@seyoorange0711s"
+      %nav#nav
+        %ul
+          %li
+            %a{:href => "#intro"} 自己紹介
+          %li
+            %a{:href => "#what_did_i_do"} 何をしてきたか
+          %li
+            %a{:href => "#what_will_i_do"} 何をしたいか
+      / Main
+      #main
+        / Introduction
+        %section#intro.main
+          .spotlight
+            .content
+              %header.major
+                %h2 千手 耀平
+              %p
+                1996年7月11日生まれ
+                %br/
+                東京理科大学機械工学科２年,約１年ほど前からプログラミングを始める.
+                %br/
+                数ヶ月後、
+                = link_to "aisaac", "http://aisaac.in/"
+                にエンジニアとして入社.Railsのアプリケーションにコミットする.
+                %br/
+                主にかける言語はRuby, Rails, html, css, js
+                その他goやcなど勉強中.
+                %br/
+                Reactを用いたRailsの実装を主に勉強中.
+            %span.image
+              = image_tag "aisaac_logo.png", class: "img-circle img-responsive"
+        / First Section
+        %section#what_did_i_do.main.special
+          %header.major
+            %h2 成果物
+          %ul.features
+            %li
+              %span= image_tag 'purity.jpg', width: 300 ,height: 230, class: "img-circle img-responsive"
+              %h3 Purity
+              %p= link_to "スーパーホストが運営するAirbnb掃除代行サービス | purity", "http://purity.host/"
+            %li
+              %span= image_tag 'kord.png', width: 300,height: 230, class: "img-circle img-responsive"
+              %h3 KORD
+              %p= link_to "KORD", 'http://www.kord.tokyo/'
+          %footer.major
+        %section#second.main.special
+          %header.major
+            %h2 何をしたいか
+          %p{style: "font-size: 17px;"}
+            Railsプロジェクトにさらに深く関わっていき、巨大なサービスを自分の手でゼロから作っていくこと.
+            %br/
+            そのためにも今のうちから様々な言語やフレームワークに関わり多様な環境でコミットし、成長していきたい
+            %br/
+      %footer#footer
+        %section
+          %h2 Address
+          %dl.alt
+            %dt Phone
+            %dd 080-9021-4436
+            %dt Email
+            %dd yohei.senu@gmail.com
